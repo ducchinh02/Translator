@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+
+<body class="h-screen p-5 flex-center bg-primary">
+    <div class="container max-w-custom p-8 bg-white rounded-3xl">
+        <div class="wrapper">
+            <div class="text-input flex flex-wrap">
+                <textarea class="w-full md:w-1/2 p-6 text-translate h-80" placeholder="Enter text..."></textarea>
+                <textarea class="w-full md:w-1/2 p-6 translate-result h-80" placeholder="Translation"></textarea>
+            </div>
+            <div class="actions py-4 px-10 flex md:flex-row flex-col gap-6 md:gap-0 items-center justify-between">
+                <div class="translate-from flex-center justify-between gap-10">
+                    <div class="icon-action pr-10 flex-center gap-5">
+                        <div class="icon">
+                            <ion-icon class="read-text" id="icon-from" name="volume-medium-outline"></ion-icon>
+                        </div>
+                        <div class="icon">
+                            <ion-icon class="copy-text" id="icon-from" name="clipboard-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <select class="select-language outline-none language-from">
+                        
+                    </select>
+                </div>
+                <div class="exchange flex-center ">
+                    <div class="icon">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="translate-to flex-center  justify-between gap-10">
+                    <select class="select-language outline-none to-language">
+                    </select>
+                    <div class="icon-action pl-10 flex-center gap-5">
+                        <div class="icon">
+                            <ion-icon class="read-text" id="icon-to" name="volume-medium-outline"></ion-icon>
+                        </div>
+                        <div class="icon">
+                            <ion-icon class="copy-text" id="icon-to" name="clipboard-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn-translate w-full block trans_3 bg-primary text-white py-5 rounded-2xl mt-5">Translate</button>
+    </div>
+    <!-- script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/countries.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

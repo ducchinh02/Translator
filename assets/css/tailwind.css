@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+::selection {
+    @apply bg-primary;
+    color: #fff;
+}
+
+.trans_3 {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+
+.container .wrapper {
+    border: solid 0.2rem #ccc;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.container .wrapper .text-input .text-translate {
+    border-right: solid 0.2rem #ccc;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .wrapper .actions {
+    border-top: solid 0.2rem #ccc;
+}
+
+.container .wrapper .actions .icon-action:first-child {
+    border-right: solid 0.2rem #ccc;
+}
+
+.container .wrapper .actions .icon-action:last-child {
+    border-left: solid 0.2rem #ccc;
+}
+
+.container .wrapper .actions .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+
+.container .wrapper .actions .icon:hover {
+    color: #5372F0;
+}
+
+.container .wrapper .actions .select-language {
+    cursor: pointer;
+}
+
+.container .btn-translate:hover {
+    background: #4064f2;
+}
+
+@media (max-width: 768px) {
+    .container .wrapper .text-input .text-translate {
+        border-bottom: solid 0.2rem #ccc;
+        border-right: unset;
+    }
+}

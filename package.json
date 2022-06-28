@@ -1,0 +1,23 @@
+{
+  "name": "translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ducchinh02/Translator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ducchinh02/Translator/issues"
+  },
+  "homepage": "https://github.com/ducchinh02/Translator#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  }
+}
